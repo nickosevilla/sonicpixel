@@ -1,0 +1,49 @@
+ion-content {
+    --background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el contenido se centre en toda la altura de la vista */
+  }
+  
+  .login-card {
+    --background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: auto; /* Asegura que los márgenes a los lados sean automáticos, centrando el elemento */
+  }
+  
+  ion-button {
+    transition: transform 0.3s ease-in-out;
+    font-size: 14px;
+    padding: 10px;
+    margin: auto; /* Centra el botón */
+    display: block; /* Necesario para que margin: auto funcione */
+  }
+  
+  ion-button:active {
+    transform: scale(0.95);
+  }
+  
+  ion-toolbar {
+    --color: #ffffff;
+    --background: #000000;
+  }
+  
+  ion-button.color-dark {
+    --color: #ffffff;
+    --background: #000000;
+  }
+  
+  ion-button.color-danger {
+    --color: #ffffff;
+    --background: #ff0000;
+  }
+  
+  ion-text {
+    margin-top: 10px;
+    text-align: center; /* Centra el texto de error */
+  }
+  

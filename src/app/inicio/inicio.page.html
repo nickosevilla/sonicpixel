@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Inicio de Sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="background-image: url('../../assets/hero.jpg'); background-size: cover;">
+  <ion-card class="login-card">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input [(ngModel)]="email" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-text color="danger" *ngIf="errorMensaje">
+      {{ errorMensaje }}
+    </ion-text>
+
+    <ion-button expand="full" color="dark" (click)="login()">Iniciar Sesión</ion-button>
+    <ion-button expand="full" color="danger" (click)="goToRegistro()">Registrarse</ion-button>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,57 @@
+/* mercado-articulos.page.scss */
+
+.custom-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item-image {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .custom-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Color de texto principal */
+  }
+  
+  .custom-card-subtitle {
+    font-size: 18px;
+    color: #777; /* Color de texto secundario */
+  }
+  
+  .custom-card-content {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .custom-card-text {
+    color: #444; /* Color de texto personalizado */
+  }
+  
+  .custom-button {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Personaliza los colores de fondo y texto de las tarjetas */
+  ion-card {
+    --ion-background-color: transparent;
+  }
+  
+  ion-card[color="custom-primary"] {
+    --ion-background-color: #3498db; /* Azul */
+  }
+  
+  ion-card[color="custom-secondary"] {
+    --ion-background-color: #e74c3c; /* Rojo */
+  }
+  
+  ion-card[color="custom-tertiary"] {
+    --ion-background-color: #27ae60; /* Verde */
+  }
+  
