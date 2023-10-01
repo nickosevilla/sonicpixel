@@ -36,4 +36,9 @@ export class InicioPage {
   goToRegistro() {
     this.router.navigate(['/registro']);
   }
+
+  forgotPassword() {
+    // Aquí puedes agregar la lógica para manejar el olvido de contraseña.
+    console.log('¿Olvidaste tu contraseña?');
+  }
 }

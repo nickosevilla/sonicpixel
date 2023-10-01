@@ -1,10 +1,4 @@
-<ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>
-      <div class="animated-title">Últimas Noticias Gamer</div>
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content class="gamer-news-content">
   <ion-grid>
@@ -12,13 +6,17 @@
       <!-- Noticia 1 -->
       <ion-col size="12" size-md="6">
         <div class="news-item">
-          <ion-img src="assets/cyber.jpg"></ion-img>
+          <ion-img src="assets/cyber.jpg" alt="Cyberpunk 2077"></ion-img>
+          <div class="news-overlay"></div>
           <div class="news-content">
             <h2>Anunciado el lanzamiento de "Cyberpunk 2077"</h2>
             <p>Los fanáticos están ansiosos por explorar el futurista mundo abierto de Night City.</p>
           </div>
         </div>
       </ion-col>
+      <!-- ... (resto de las noticias) ... -->
+
+
 
       <!-- Noticia 2 -->
       <ion-col size="12" size-md="6">
@@ -76,6 +74,19 @@
       </ion-col>
     </ion-row>
   </ion-grid>
- 
-  <ion-button expand="full" color="danger" [routerLink]="['/inicio']">Ir al inicio</ion-button>
+
 </ion-content>
+
+
+
+
+
+
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      <div class="animated-title">Últimas Noticias Gamer</div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+

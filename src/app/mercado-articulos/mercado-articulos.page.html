@@ -1,57 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>Mercado de Artículos</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="ion-padding store-content">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar color="dark">
       <ion-title size="large">Mercado de Artículos</ion-title>
     </ion-toolbar>
   </ion-header>
   
-  <ion-card class="custom-card">
-    <ion-img src="https://example.com/skin-epica.jpg" alt="Skin Épica" class="item-image"></ion-img>
-    <ion-card-header>
-      <ion-card-title class="custom-card-title">Skin Épica</ion-card-title>
-      <ion-card-subtitle class="custom-card-subtitle">Valor: 500 monedas</ion-card-subtitle>
-    </ion-card-header>
+  <div class="store-grid">
+    <ion-card class="custom-card">
+      <ion-img src="https://example.com/skin-epica.jpg" alt="Skin Épica" class="item-image"></ion-img>
+      <ion-card-header>
+        <ion-card-title class="custom-card-title">Skin Épica</ion-card-title>
+        <ion-card-subtitle class="custom-card-subtitle">Valor: 500 monedas</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content class="custom-card-content">
+        <p class="custom-card-text">Descripción detallada de la skin épica y sus beneficios en el juego.</p>
+        <ion-button expand="full" color="custom-primary" class="custom-button">Comprar</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <!-- ... (resto de las tarjetas de artículos) ... -->
+  </div>
   
-    <ion-card-content class="custom-card-content">
-      <p class="custom-card-text">Descripción detallada de la skin épica y sus beneficios en el juego.</p>
-      <ion-button expand="full" color="custom-primary" class="custom-button">Comprar</ion-button>
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card class="custom-card">
-    <ion-img src="https://example.com/arma-legendaria.jpg" alt="Arma Legendaria" class="item-image"></ion-img>
-    <ion-card-header>
-      <ion-card-title class="custom-card-title">Arma Legendaria</ion-card-title>
-      <ion-card-subtitle class="custom-card-subtitle">Valor: 800 monedas</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content class="custom-card-content">
-      <p class="custom-card-text">Descripción detallada del arma legendaria y su poder en el juego.</p>
-      <ion-button expand="full" color="custom-secondary" class="custom-button">Comprar</ion-button>
-    </ion-card-content>
-  </ion-card>
-
-  <!-- Agrega más elementos aquí para que los jugadores puedan publicar sus artículos -->
-  <!-- Por ejemplo: -->
-
-  <ion-card class="custom-card">
-    <ion-img src="https://example.com/objeto-raro.jpg" alt="Objeto Raro" class="item-image"></ion-img>
-    <ion-card-header>
-      <ion-card-title class="custom-card-title">Objeto Raro</ion-card-title>
-      <ion-card-subtitle class="custom-card-subtitle">Valor: 300 monedas</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content class="custom-card-content">
-      <p class="custom-card-text">Descripción detallada del objeto raro y su utilidad en el juego.</p>
-      <ion-button expand="full" color="custom-tertiary" class="custom-button">Comprar</ion-button>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-button [routerLink]="['/inicio']" expand="full" color="primary">Ir al Inicio</ion-button>
 </ion-content>

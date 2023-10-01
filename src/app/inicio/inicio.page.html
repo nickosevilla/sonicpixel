@@ -1,19 +1,16 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title>
-      Inicio de Sesión
-    </ion-title>
+    <img src="../../assets/123.png" alt="Logo de tu Empresa" class="logo"/>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding" style="background-image: url('../../assets/hero.jpg'); background-size: cover;">
+<ion-content class="background">
   <ion-card class="login-card">
     <ion-list>
       <ion-item>
         <ion-label position="floating">Correo Electrónico</ion-label>
         <ion-input [(ngModel)]="email" type="email"></ion-input>
       </ion-item>
-
       <ion-item>
         <ion-label position="floating">Contraseña</ion-label>
         <ion-input [(ngModel)]="password" type="password"></ion-input>
@@ -24,7 +21,8 @@
       {{ errorMensaje }}
     </ion-text>
 
-    <ion-button expand="full" color="dark" (click)="login()">Iniciar Sesión</ion-button>
-    <ion-button expand="full" color="danger" (click)="goToRegistro()">Registrarse</ion-button>
+    <ion-button expand="full" class="login-button" (click)="login()">Iniciar Sesión</ion-button>
+    <ion-button expand="full" class="register-button" (click)="goToRegistro()">Registrarse</ion-button>
+    <a (click)="forgotPassword()" class="forgot-password">¿Olvidaste tu contraseña?</a>
   </ion-card>
 </ion-content>

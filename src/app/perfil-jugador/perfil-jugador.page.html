@@ -11,7 +11,7 @@
     </ion-avatar>
     <div class="profile-info">
       <h1 class="profile-name">Rafa34ElPoderoso</h1>
-      <p class="profile-details">Juego favorito: League of legends</p>
+      <p class="profile-details">Juego favorito: League of Legends</p>
       <p class="profile-details">Threads publicados: 23</p>
     </div>
   </div>
@@ -19,15 +19,37 @@
   <div class="profile-stats">
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Infomacion</ion-card-title>
+        <ion-card-title>Información</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <p>Puntuación: 1500</p>
         <p>Amigos: 47</p>
-
       </ion-card-content>
     </ion-card>
   </div>
 
-  <ion-button [routerLink]="['/inicio']" expand="full" color="primary">Ir al Inicio</ion-button>
+  <!-- Sección de Configuración del Perfil -->
+  <ion-item>
+    <ion-label>Configuración del Perfil</ion-label>
+    <ion-button fill="outline" slot="end" routerLink="/configuracion-perfil">Editar</ion-button>
+  </ion-item>
+
+  <!-- Historial de Juegos -->
+  <ion-list-header>
+    <ion-label>Historial de Juegos</ion-label>
+  </ion-list-header>
+  <ion-list>
+    <ion-item *ngFor="let juego of historialJuegos">
+      <ion-label>{{ juego.nombre }}</ion-label>
+      <ion-note slot="end">{{ juego.fecha }}</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <!-- Opciones de Privacidad -->
+  <ion-item>
+    <ion-label>Privacidad</ion-label>
+    <ion-toggle slot="end" [(ngModel)]="privacidad"></ion-toggle>
+  </ion-item>
+
+
 </ion-content>
